@@ -55,7 +55,8 @@ def second_scenario():
         cevap1 = input("Hangi bağlantı güvenli geliyor? (1/2/3): ")
         if cevap1 == "1":
             print("Doğru cevap!, bu konuda cidden iyisiniz")
-            print("Üçüncü senaryoya geçiş yapılıyor! (3. senaryo daha gelmedi :))")
+            print("Üçüncü senaryoya geçiş yapılıyor!")
+            third_scenario()
             break
         if cevap1 == "2":
             print("Yanlış seçim yaptınız lütfen tekrar deneyiniz!")
@@ -66,12 +67,105 @@ def second_scenario():
             print("Tekrar denemek için biraz bekleyin")
             time.sleep(1.5)
 def third_scenario():
-    print("Üçüncü Senaryoya Hoşgeldiniz!")
+    puan = 0
+    print("Üçüncü Senaryoya Hoşgeldiniz!(Sınav)")
+    print("10 Soruda 80 Puan veya Üstü Almanız Gerekmektedir")
     print(Fore.LIGHTCYAN_EX)
-    print("Geliştirilme Aşamasında...")
-
-
-
-
+    print("Siber Güvenlik İçin En Yaygın Olarak Kullanılan İşletim Sistemi Nedir?")
+    print("""
+    1)KaliLinux
+    2)Windows
+    3)Linux
+    4)MacOS
+    """)
+    cevapla1 = input("Cevabınız nedir? 1/2/3/4: ")
+    if cevapla1 == "1":
+        print("Doğru Cevap!")
+        puan += 20
+    if cevapla1 == "2":
+        print("Yanlış Cevap!")
+    if cevapla1 == "3":
+        print("Yanlış Cevap!")
+    if cevapla1 == "4":
+        print("Yanlış Cevap")
+    print("Hangisi Siber Güvenlikte Kullanılan Bir Tool Değildir?")
+    print("""
+    1)CMD
+    2)Nmap
+    3)Gobuster
+    4)BruteSploit
+    """)
+    cevapla2 = input("Cevabınız nedir? 1/2/3/4: ")
+    if cevapla2 == "1":
+        print("Doğru Cevap!")
+        puan += 20
+    if cevapla2 == "2":
+        print("Yanlış Cevap!")
+    if cevapla2 == "3":
+        print("Yanlış Cevap!")
+    if cevapla2 == "4":
+        print("Yanlış Cevap!")
+    print("Aşşağıdakilerden Hangisi Daha Güçlü Bir Paroladır")
+    print("""
+    1) kaan1232002
+    2) AsqDx6.1!
+    3) 123456
+    4) alı1907A
+    """)
+    cevapla3 = input("Cevabınız nedir? 1/2/3/4: ")
+    if cevapla3 == "1":
+        print("Yanlış Cevap!")
+    if cevapla3 == "2":
+        print("Doğru Cevap!")
+        puan += 20
+    if cevapla3 == "3":
+        print("Yanlış Cevap!")
+    if cevapla3 == "4":
+        print("Yanlış Cevap!")
+    print("Aşşağıdakilerden Hangisi Zararlı Yazılım Değildir?")
+    print(""""
+    1)Trojan
+    2)Malware
+    3)Router
+    4)Worm
+    """)
+    cevapla4 = input("Cevabınız Nedir? 1/2/3/4: ")
+    if cevapla4 == "1":
+        print("Yanlış Cevap!")
+    if cevapla4 == "2":
+        print("Yanlış Cevap!")
+    if cevapla4 == "3":
+        print("Doğru Cevap!")
+        puan += 20
+    if cevapla4 == "4":
+        print("Yanlış Cevap!")
+    print("Aşşağıdakilerden Hangisi Bir Ağ Topolojisi Değildir?")
+    print("""
+    1)Bus
+    2)Star
+    3)Ring
+    4)Modem
+    """)
+    cevapla5 = input("Cevabınız Nedir? 1/2/3/4: ")
+    if cevapla5 == "1":
+        print("Yanlış Cevap!")
+    if cevapla5 == "2":
+        print("Yanlış Cevap!")
+    if cevapla5 == "3":
+        print("Yanlış Cevap!")
+    if cevapla5 == "4":
+        print("Doğru Cevap!")
+        puan += 20
+    print("Toplam Puan: "+ str(puan))
+    if int(puan) > 79:
+        print("Test Bitmiştir, Kazandınız!")
+        print("Çıkış Yapılıyor...")
+        time.sleep(1.5)
+        exit()
+    else:
+        print("Testi Geçemediniz, Kaybettiniz")
+        print("Çıkış Yapılıyor...")
+        time.sleep(1.5)
+        exit()
 if __name__ == "__main__":
     first_scenario()
