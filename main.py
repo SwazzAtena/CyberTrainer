@@ -68,6 +68,10 @@ def second_scenario():
             time.sleep(1.5)
 def third_scenario():
     puan = 0
+    
+    
+    
+    print(Fore.LIGHTYELLOW_EX)
     print("Üçüncü Senaryoya Hoşgeldiniz!(Sınav)")
     print("10 Soruda 80 Puan veya Üstü Almanız Gerekmektedir")
     print(Fore.LIGHTCYAN_EX)
